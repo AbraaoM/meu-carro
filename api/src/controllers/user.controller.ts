@@ -22,7 +22,7 @@ router.get("/user", async (req: express.Request, resp: express.Response) => {
     resp.status(201).json(users);
   } catch (error) {
     console.error("Erro ao criar usuário:", error);
-    resp.status(500).json({ message: "Erro ao criar usuário" });
+    resp.status(500).json({ message: "Erro ao listas usuários" });
   }
 });
 
@@ -32,7 +32,7 @@ router.get("/user/:id", async (req: express.Request<{id: string}>, resp: express
     resp.status(201).json(users);
   } catch (error) {
     console.error("Erro ao criar usuário:", error);
-    resp.status(500).json({ message: "Erro ao criar usuário" });
+    resp.status(500).json({ message: "Erro ao buscar usuário" });
   }
 });
 
@@ -42,7 +42,7 @@ router.put("/user", async (req: express.Request<any, any, PrismaUser>, resp: exp
     resp.status(201).json(user);
   } catch (error) {
     console.error("Erro ao criar usuário:", error);
-    resp.status(500).json({ message: "Erro ao criar usuário" });
+    resp.status(500).json({ message: "Erro ao atualizar usuários" });
   }
 });
 
@@ -52,7 +52,7 @@ router.delete("/user/:id", async (req: express.Request<{id: string}>, resp: expr
     resp.status(201).json(user);
   } catch (error) {
     console.error("Erro ao criar usuário:", error);
-    resp.status(500).json({ message: "Erro ao criar usuário" });
+    resp.status(500).json({ message: "Erro ao deletar usuários" });
   }
 });
 

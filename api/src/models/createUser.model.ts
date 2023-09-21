@@ -1,8 +1,6 @@
-import CarModel from "./car.model"
+import CarModel from "./createCar.model"
 
 export default interface CreateUserModel {
-  id: number;
   email: string;
   name?: string;
-  cars: CarModel[];
 }

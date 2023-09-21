@@ -1,4 +1,4 @@
-import CarModel from "./car.model";
+import CarModel from "./createCar.model";
 
 export default interface Procedure {
   id: number;
