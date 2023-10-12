@@ -1,14 +1,25 @@
-<section
-  class="container d-flex justify-content-center pt-5"
->
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Meu Carro</a>
+    <img
+      src="https://avatars.githubusercontent.com/u/49653939?v=4"
+      class="rounded-circle"
+      alt="profile photo"
+      width="40rem"
+    />
+  </div>
+</nav>
+
+<section class="container d-flex justify-content-center pt-3">
   <div class="row justify-content-center">
-    <div class="col d-flex justify-content-center py-2" *ngFor="let car of carList">
+    <div
+      class="col d-flex justify-content-center py-2"
+      *ngFor="let car of carList"
+    >
       <div class="card" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">{{ car.name }}</h5>
-          <p class="card-text">
-            Placa: {{car.licensePlate}}
-          </p>
+          <p class="card-text">Placa: {{ car.licensePlate }}</p>
           <a href="#" class="btn btn-primary">Detalhes</a>
         </div>
       </div>
