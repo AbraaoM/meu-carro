@@ -1,0 +1,17 @@
+<section
+  class="container d-flex justify-content-center pt-5"
+>
+  <div class="row justify-content-center">
+    <div class="col d-flex justify-content-center py-2" *ngFor="let car of carList">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">{{ car.name }}</h5>
+          <p class="card-text">
+            Placa: {{car.licensePlate}}
+          </p>
+          <a href="#" class="btn btn-primary">Detalhes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
